@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>GIPHY - My Fav Bands</title>
+    <title>GIPHY - Some of my Favorite Movies</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,24 +20,28 @@
 
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div id="displayButtons" class="col-md-8">
-                <div class="row">
-                    <div class="col">
+    <div class="container-fluid mx-auto w-100 h-100 justify-content-center">
+        <div class="row mx-auto">
+            <div class="col" id="displayButtons"></div>
+        </div>
+        <div class="row mx-auto">
+            <div class="col mx-auto">
+                <div class="row mx-auto text-center">
+                    <div id="movieInfo" class="col mx-auto">
+
+                    </div>
+                    <div class="col-4-md mx-auto text-left">
                         <div class="form-group">
-                          <label for="addABand">Add a band:</label>
-                          <input type="text" class="form-control" name="addABand" id="addABand" aria-describedby="helpId">
-                          
-                        </div><button type="submit" class="btn btn-primary">Submit</button>
+                            <label for="movie-input">Add a movie:</label>
+                            <input type="text" id="movie-input">
+
+                        </div><button id="addAMovieClick" type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div id="displayGif" class="col-md-8">
-
-            </div>
+        <div id="displayGif" class="row mx-auto">
+            
         </div>
     </div>
     </div>
@@ -46,13 +50,13 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
-        <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
