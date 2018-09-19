@@ -34,12 +34,12 @@ $(document).ready(function () {
                 // });
                 // image.addClass("movieGif")
                 // movieDiv.append(image);
-                var rating = element.rating;
+                var rating = element.rating.toUpperCase();
                 // var pOne = $("<p>").text("Rating: " + rating);
                 // movieDiv.append(pOne);
                 // $("#displayGif").prepend(movieDiv);
 
-                var movieDiv = $('<div class="card" style="width: 18rem;">');
+                var movieDiv = $('<div class="card mr-2 mt-2" style="width: 18rem;">');
                 var image = $("<img>").attr({
                     "src": imgURL,
                     "data-state": "still",
@@ -108,6 +108,7 @@ $(document).ready(function () {
         var addMovie = $("#movie-input").val().trim();
         console.log(addMovie)
         movies.push(addMovie);
+        $("#movie-input").val("");
         renderButtons();
     });
 
