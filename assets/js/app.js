@@ -72,7 +72,7 @@ $(document).ready(function () {
     function displayMovieInfo() {
         var api_key = "f12433da";
         // movieSelected = $(this).data("name");
-        var queryURL = "http://www.omdbapi.com/?apikey=" + api_key + "&t=" + movieSelected;
+        var queryURL = "https://www.omdbapi.com/?apikey=" + api_key + "&t=" + movieSelected;
 
         console.log(queryURL);
 
